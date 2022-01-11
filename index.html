@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 2px solid rebeccapurple;
+            margin: 3px 0;
+            background: cyan;
+            padding: 9px;
+
+        }
+
+        .bg-primary{
+            background-color: rgb(151, 194, 214);
+        }
+        .text-success{
+            color: green;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Welcome to JS tutorial</h1>
-</body>
-</html>
+    <div id="firstContainer" class="container">
+        <button id="click">Click Me</button>
+        <button id="btn1">Button 1</button>
+        <p>The test paragraph.</p>
+    </div>
+    <div class="container">
+        <p>This is paragraph</p>
+    </div>
 
+    <div class="container test-class" id="test-para">
+        <p>
+            This is testing para
+        </p>
+    </div>
+
+    <div class="container">
+        <button id="btn-events" onclick="clicked()">Click Me</button>
+    </div>
+    <!-- <script>
+        //  1. Ways to print in Javascript
+        console.clear();
+        console.log('Heyo from Devanshee');
+        // alert('me!');
+        console.log(firstContainer);
+        firstContainer.innerHTML = "Hello There";
+        console.log(document.getElementsByTagName('h1')[0]);
+        document.getElementsByTagName('h1')[0].style.background = 'yellow'; 
+        // document.write("This is document write"); this is not recomended by google 
+
+        // 2. Javascript console API
+        console.warn("This is warning");
+        console.error("This is error");
+        console.assert(4==6);
+
+    </script> -->
+
+    <script src="index.js"></script>
+</body>
+
+
+</html>
