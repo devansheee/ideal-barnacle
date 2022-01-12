@@ -220,3 +220,7 @@ js = JSON.stringify(obj);
 console.log(js);
 parsed = JSON.parse(`{"name":"deva", "length":1}`);
 console.log(parsed);
+
+// 17. Template literals : backticks
+a = 32;
+console.log(`a is ${a}`);
